@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guarda Móveis Seguro - Seu Espaço, Nossa Responsabilidade</title>
+  <meta name="description" content="Guarda-móveis seguro, limpo e acessível. Armazenamos seus móveis com total segurança. Orçamento grátis!">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    header p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .btn {
+      display: inline-block;
+      background: #e63946;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+    }
+    .btn:hover { background: #d00000; transform: translateY(-3px); }
+
+    section { padding: 60px 20px; text-align: center; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    h2 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; margin-bottom: 20px; color: #1d3557; }
+    .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px; }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+    .card i { font-size: 2.5rem; color: #457b9d; margin-bottom: 15px; }
+    .card h3 { font-size: 1.4rem; margin: 15px 0; color: #1d3557; }
+
+    .features { background: #f1faee; }
+    .features ul { list-style: none; max-width: 700px; margin: 30px auto; text-align: left; }
+    .features li { margin: 12px 0; font-size: 1.1rem; }
+    .features li:before { content: "✓ "; color: #2a9d8f; font-weight: bold; }
+
+    .contact { background: #1d3557; color: white; }
+    .contact a { color: #a8dadc; text-decoration: none; font-weight: 600; }
+    .contact .whatsapp {
+      background: #25D366;
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 50px;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.5rem; }
+      .services { flex-direction: column; align-items: center; }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Guarda Móveis Seguro</h1>
+    <p>Seu espaço, nossa responsabilidade. Armazenamos com segurança, limpeza e acesso fácil.</p>
+    <a href="#contato" class="btn">Fazer Orçamento Grátis</a>
+  </header>
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="services">
+        <div class="card">
+          <i class="fas fa-box"></i>
+          <h3>Armazenamento Seguro</h3>
+          <p>Unidades climatizadas, câmeras 24h e seguro incluso.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-truck"></i>
+          <h3>Transporte Incluso</h3>
+          <p>Retirada e entrega com equipe especializada.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-clock"></i>
+          <h3>Acesso Flexível</h3>
+          <p>Visite seus móveis quando quiser, sem burocracia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vantagens -->
+  <section class="features" id="vantagens">
+    <div class="container">
+      <h2>Por que nos escolher?</h2>
+      <ul>
+        <li>Preços acessíveis a partir de R$ 89/mês</li>
+        <li>Unidades de 2m³ a 20m³</li>
+        <li>Contrato flexível: mensal ou anual</li>
+        <li>Localização central com estacionamento</li>
+        <li>Atendimento humanizado e transparente</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <p><strong>Telefone:</strong> (11) 99999-9999</p>
+      <p><strong>Email:</strong> <a href="mailto:contato@guardamoveis.com">contato@guardamoveis.com</a></p>
+      <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro, São Paulo - SP</p>
+      <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20um%20orçamento%20de%20guarda-móveis" class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> Orçamento via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Guarda Móveis Seguro. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
